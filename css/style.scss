@@ -1,0 +1,478 @@
+@import url("https://use.typekit.net/avu4clv.css");
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url("https://use.typekit.net/wlg6ugd.css");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 100%;
+    overflow-x: hidden;
+    font-family: proxima-nova, sans-serif; 
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color: unset;
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: proxima-nova, sans-serif; 
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+
+    &--story,
+    &--products{
+        width: unset;
+    }
+
+    &--nepal{
+        width: 90%;
+    }
+}
+
+.nav{
+    height: 80px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img{
+        width: 60%;
+    }
+}
+
+.hero{
+    height: 90vh;
+    width: 100%;
+    position: relative;
+
+        &__img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+        position: relative;
+        z-index: -1;
+        }
+        
+        &__content{
+        position: absolute;
+        top: 40px;
+        left: 0;
+        color: #fff;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 30px;
+        text-align: center;
+        }
+
+        &__heading{
+            font-size: 2.5rem;
+            padding: 10px 0;
+            font-weight: 700;
+            text-shadow: 1px 1px 10px rgba(148, 148, 148, 0.3);
+        }
+
+        &__heading-sub{
+            letter-spacing: 1;
+            line-height: 1.5;
+            font-weight: 400;
+            text-shadow: 1px 1px 10px rgb(146, 146, 146);
+        }
+}
+
+.btn{
+    position: relative;
+    padding: 15px 10px;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    letter-spacing: 1px;
+    width: 50%;
+    cursor: pointer;
+    transition: ease-in .2s;
+    background: #f6eee9;
+    color: #000;
+    font-weight: 400;
+    font-size: .9rem;
+
+    &--hero{
+        margin-top: 20px;
+    }
+
+    &--products{
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    &--story{
+        background-color: rgb(249, 255, 161);
+    }
+
+    &:hover{
+        transform: scale(1.2);
+    }
+}
+
+.products{
+    padding: 10px 0;
+
+    &__heading{
+        padding-top: 40px;
+        text-align: center;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        font-weight: 300;
+
+        &:after{
+            content: "";
+            border-bottom: 1px solid black;
+            height: 1px;
+            width: 50px;
+            position: relative;
+            display: block;
+            top: 5px;
+            left: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__heading-sub{
+        padding: 15px 0;
+        text-align: center;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+
+    &__grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    
+    &__grid-item{
+        text-align: center;
+        padding: 5px 20px;
+    }
+
+    &__grid-copy{
+        padding: 20px 0;
+    }
+
+    &__name{
+        font-size: 1.5rem;
+    }
+
+    &__description{
+        padding: 10px 0;
+        font-weight: 300;
+        letter-spacing: .5px;
+    }
+
+    &__pris{
+        padding: 10px 0;
+        font-weight: 700;
+        letter-spacing: .5px;
+    }
+}
+
+.story{
+    position: relative;
+
+    &__items{
+        position: relative;
+    }
+
+    &__item--sign{
+        position: relative;
+
+        &:before{
+            content: "";
+            background-image: url(/img/karsten-winegeart-NE0XGVKTmcA-unsplash.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: .3;
+        }
+    }
+
+    &__content{
+        position: relative;
+        background: rgba(255, 255, 255, 0.507);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #404040;
+        padding: 50px 20px;
+    }
+
+    &__heading{
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+
+    &__heading-sub{
+        font-size: 2rem;
+
+        &:after{
+            content: "";
+            border-bottom: 1px solid black;
+            height: 1px;
+            width: 50px;
+            position: relative;
+            display: block;
+            top: 5px;
+            left: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__copy{
+        padding: 15px 0;
+        letter-spacing: .5px;
+    }
+
+    &__sign{
+        font-family: adobe-handwriting-ernie, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.5rem;
+
+        span{
+            display: block;
+            font-family: proxima-nova, sans-serif; 
+            font-size: .8rem;
+            font-weight: 300;
+            padding-bottom: 50px;
+            margin-top: -10px;
+        }
+    }
+
+    &__nepal{
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(244,238,235,1) 70%);
+    }
+
+    &__nepal-copy{
+        padding: 30px;
+    }
+
+    &__nepal-heading{
+        font-size: 2.1rem;
+    }
+
+    &__nepal-text{
+        font-weight: 300;
+        letter-spacing: 1;
+        line-height: 1.5;
+        padding: 10px 0;
+    }
+}
+
+.nepal{
+
+    &__heading{
+        font-size: 2.1rem;
+    }
+
+    &__text{
+        font-weight: 300;
+        letter-spacing: 1;
+        line-height: 1.5;
+        padding: 10px 0;
+    }
+}
+
+.service{
+    background-image: url(/img/michael-oxendine-t7wwffh6x8E-unsplash-scaled.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+
+    &__list{
+        background: rgba(0, 0, 0, 0.5);
+        height: 100%;
+        padding: 60px 0;
+    }
+
+    &__list-item{
+        padding: 20px 0;
+    }
+
+    &__list-copy{
+        font-weight: 700;
+    }
+
+    &__icon{
+        width: 80px;
+        height: 80px;
+        fill: #fff;
+
+        &--klarna{
+            width: 120px;
+            height: 120px;
+        }
+    }
+    
+}
+
+.instagram{
+    background: rgb(201, 201, 201);
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+.footer{
+    background: #000;
+    color: #fff;
+    padding: 40px 0;
+
+    &__grid-item{
+        padding: 10px 0;
+
+        &--logo{
+            text-align: center;
+        }
+    }
+
+    &__list-item{
+        padding: 8px 0;
+    }
+
+    &__social{
+        i{
+            margin: 20px 5px 0;
+            font-size: 1.5rem;
+        }
+    }
+
+    &__brev{
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    &__brev-heading{
+        font-size: 1.5rem;
+    }
+
+    &__brev-heading-sub{
+        font-size: .8rem;
+        padding: 5px 0 10px;
+    }
+
+    &__form{
+        width: 100%;
+    }
+
+    &__email{
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    &__form-btn{
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: pink;
+        text-transform: uppercase;
+        color: rgb(0, 0, 0);
+    }
+
+    &__img-partner{
+        margin-bottom: 10px;
+    }
+}
+
+.faq-desk{
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+    .container{
+
+        &--products{
+            width: 60%;
+        }
+    }
+
+    .nav{
+    
+        img{
+            width: 20%;
+        }
+    }
+
+    .btn{
+        &--hero{
+            width: 15%;
+        }
+    }
+    
+    .story{
+
+        &__items{
+            display: flex;
+        }
+    
+        &__item--sign{
+            flex-grow: 1;
+            flex-basis: 0;
+
+        }
+    
+        &__item--nepal{
+            flex-grow: 1;
+            flex-basis: 0;
+        }
+    }
+
+    .faq-mobile{
+        display: none;
+    }
+
+    .faq-desk{
+        display: block;
+    }
+
+}
