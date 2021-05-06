@@ -154,6 +154,19 @@ h1, h2, h3, h4, h5, h6 {
           transform: scale(1.2);
 }
 
+.btn--sticky {
+  position: fixed;
+  right: 0;
+  top: 200px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
 .products {
   padding: 10px 0;
 }
@@ -198,8 +211,8 @@ h1, h2, h3, h4, h5, h6 {
 .products__grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(200px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
 .products__grid-item {
@@ -241,7 +254,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .story__item--sign:before {
   content: "";
-  background-image: url(/img/karsten-winegeart-NE0XGVKTmcA-unsplash.jpg);
+  background-image: url(img/karsten-winegeart-NE0XGVKTmcA-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -359,7 +372,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .service {
-  background-image: url(/img/michael-oxendine-t7wwffh6x8E-unsplash-scaled.jpg);
+  background-image: url(img/michael-oxendine-t7wwffh6x8E-unsplash-scaled.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -465,6 +478,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer__img-partner {
   margin-bottom: 10px;
+}
+
+.faq-mobile img {
+  width: 100%;
 }
 
 .faq-desk {
